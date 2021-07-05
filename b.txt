@@ -1,0 +1,465 @@
+Last login: Mon Jul  5 15:31:25 on ttys000
+(base) kody21c@kody21cui-MacBook ~ % pwd
+/Users/kody21c
+(base) kody21c@kody21cui-MacBook ~ % cd Desktop/practice1
+(base) kody21c@kody21cui-MacBook practice1 % git log
+fatal: your current branch 'master' does not have any commits yet
+(base) kody21c@kody21cui-MacBook practice1 % git add .
+(base) kody21c@kody21cui-MacBook practice1 % git commit -m "first map"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+(base) kody21c@kody21cui-MacBook practice1 % git log
+fatal: your current branch 'master' does not have any commits yet
+(base) kody21c@kody21cui-MacBook practice1 % git add .
+(base) kody21c@kody21cui-MacBook practice1 % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   a.txt
+
+(base) kody21c@kody21cui-MacBook practice1 % git commit -m "a.txt"
+[master (root-commit) 3a5719e] a.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+(base) kody21c@kody21cui-MacBook practice1 % git log
+commit 3a5719e1ebfd8a61cb0fa2241562b62bfc9997bc (HEAD -> master)
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:16:30 2021 +0900
+
+    a.txt
+(base) kody21c@kody21cui-MacBook practice1 % git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+(base) kody21c@kody21cui-MacBook practice1 % echo "# Deeplearning" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Thughandling/Deeplearning.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+[master 4c151cb] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+The authenticity of host 'github.com (52.78.231.108)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % echo "# Deeplearning" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Thughandling/Deeplearning.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+[main fd3ba51] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+The authenticity of host 'github.com (52.78.231.108)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,52.78.231.108' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % git bash
+git: 'bash' is not a git command. See 'git --help'.
+
+The most similar command is
+	stash
+(base) kody21c@kody21cui-MacBook practice1 % git init
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+(base) kody21c@kody21cui-MacBook practice1 % git status
+On branch main
+nothing to commit, working tree clean
+(base) kody21c@kody21cui-MacBook practice1 % git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+(base) kody21c@kody21cui-MacBook practice1 % git push --set-upstream origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % git log
+commit fd3ba51ab20455bf276b0a9941782942b1be458e (HEAD -> main)
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:17:08 2021 +0900
+
+    first commit
+
+commit 4c151cbf79cb8a44ee9f32566cd3aa951f759e26
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:17:00 2021 +0900
+
+    first commit
+
+commit 3a5719e1ebfd8a61cb0fa2241562b62bfc9997bc
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:16:30 2021 +0900
+
+    a.txt
+(base) kody21c@kody21cui-MacBook practice1 % git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:Thughandling/Deeplearning.git'
+(base) kody21c@kody21cui-MacBook practice1 % echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Thughandling/test.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+[main aa347fb] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Warning: Permanently added the RSA host key for IP address '15.164.81.167' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % git remote add origin git@github.com:Thughandling/test.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % 
+Please make sure you have the correct access rights
+and the repository exists.
+zsh: command not found: Please
+zsh: command not found: and
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Thughandling/test.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+[main 57266b3] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % ssh-keygen -t rsa 4096 -C "headonggumdo@gmail.com"
+Too many arguments.
+usage: ssh-keygen [-q] [-b bits] [-C comment] [-f output_keyfile] [-m format]
+                  [-N new_passphrase] [-t dsa | ecdsa | ed25519 | rsa]
+       ssh-keygen -p [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -G output_file [-v] [-b bits] [-M memory] [-S start_point]
+       ssh-keygen -f input_file -T output_file [-v] [-a rounds] [-J num_lines]
+                  [-j start_line] [-K checkpt] [-W generator]
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q -f krl_file file ...
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+       		-n namespace -s signature_file [-r revocation_file]
+(base) kody21c@kody21cui-MacBook practice1 % ssh-keygen -t rsa 4096 -C "headonggumdo@gmail.com"
+Too many arguments.
+usage: ssh-keygen [-q] [-b bits] [-C comment] [-f output_keyfile] [-m format]
+                  [-N new_passphrase] [-t dsa | ecdsa | ed25519 | rsa]
+       ssh-keygen -p [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -G output_file [-v] [-b bits] [-M memory] [-S start_point]
+       ssh-keygen -f input_file -T output_file [-v] [-a rounds] [-J num_lines]
+                  [-j start_line] [-K checkpt] [-W generator]
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q -f krl_file file ...
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+       		-n namespace -s signature_file [-r revocation_file]
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % cat ~/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC7/yMEB7hc7638OkIX0Nzwgt5Fg4M+ilECxvZyiZcEA4KnoIa1RqlcrUJmEUtYMLrQwzIWq/0V1/mx33Yh1yxkRvGE/HShOgD+KUHtZdzEQqq39QCRdYjEHI0URjT2+PQPEkhJDxNl8JjFrEwgK6AHW9+mGdT4OADKSJo7L5cHCpIdCFo/O68Y/ggW/+IU5q7hQQpS1YNblZVthQj5g/xg22AySqzOT0Z0WU2JqdjUeYl687pRTtVY4AUxfiR6GQqb1GXkRLsPN4wE+Fu6DCfBMdyKwIQ+ShtU2n5sRSSO5ePdqsiM2mvdEyC56+vkqeO2k3TZeadxhe0n+WGFHcIgxVG/Dr1/R5pSJ/zFqz2awsTFI7EjWsz0r/fWYvjgRdCd9ClyJMppIpliAhLzeS8+e9X7LHfAAGivbwK2i1kmVVC74mqkorBSXm7f7Ukpdz0QYHQPTTl6I/4gPhtfxzNtInwXpdvCYTgCaoiQ2EQhVgPVuTGALyWAHO5zdutQuL0= kody21c@kody21cui-MacBook.local
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Thughandling/test.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+[main fc26b76] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Enter passphrase for key '/Users/kody21c/.ssh/id_rsa': 
+Enter passphrase for key '/Users/kody21c/.ssh/id_rsa': 
+Enter passphrase for key '/Users/kody21c/.ssh/id_rsa': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Thughandling/test.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+[main 50061bc] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Enter passphrase for key '/Users/kody21c/.ssh/id_rsa': 
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (21/21), 1.74 KiB | 444.00 KiB/s, done.
+Total 21 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:Thughandling/Deeplearning.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) kody21c@kody21cui-MacBook practice1 % echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Thughandling/test.git
+git push -u origin main
+
+Reinitialized existing Git repository in /Users/kody21c/Desktop/practice1/.git/
+[main 2cd39ff] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Enter passphrase for key '/Users/kody21c/.ssh/id_rsa': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % git remote add origin git@github.com:Thughandling/test.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+Enter passphrase for key '/Users/kody21c/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Thughandling/Deeplearning.git
+   50061bc..2cd39ff  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % echo "Hello, Git" > README.md
+(base) kody21c@kody21cui-MacBook practice1 % cat README.md
+Hello, Git
+(base) kody21c@kody21cui-MacBook practice1 % git add .
+(base) kody21c@kody21cui-MacBook practice1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+(base) kody21c@kody21cui-MacBook practice1 % 
+(base) kody21c@kody21cui-MacBook practice1 % git commit -m "README.md update"
+[main 740b538] README.md update
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+(base) kody21c@kody21cui-MacBook practice1 % git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) kody21c@kody21cui-MacBook practice1 % git remote add test          
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+(base) kody21c@kody21cui-MacBook practice1 % git remote add test master
+(base) kody21c@kody21cui-MacBook practice1 % git push test master
+error: src refspec master does not match any
+error: failed to push some refs to 'master'
+(base) kody21c@kody21cui-MacBook practice1 % git push test       
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) kody21c@kody21cui-MacBook practice1 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) kody21c@kody21cui-MacBook practice1 % git log
+commit 740b538de1fbd8dd20617e3f035061fc7923d65b (HEAD -> main)
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:57:33 2021 +0900
+
+    README.md update
+
+commit 2cd39ffe28934985ca1693a292344a2aa3e5709c (origin/main)
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:55:10 2021 +0900
+
+    first commit
+
+commit 50061bc9b59a1fde3e4b2019d24c575706c2b014
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:54:49 2021 +0900
+
+    first commit
+
+commit fc26b76b4b51e9558eabb217ad71495675e63242
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:54:20 2021 +0900
+
+    first commit
+
+commit 57266b3a3caebb23acf5cb282c0785cdefbf14f8
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:48:26 2021 +0900
+
+    first commit
+
+commit aa347fb2e06cbf4a61b59daf8016fd7b1522d8d7
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:45:42 2021 +0900
+
+    first commit
+
+commit fd3ba51ab20455bf276b0a9941782942b1be458e
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:17:08 2021 +0900
+
+    first commit
+
+commit 4c151cbf79cb8a44ee9f32566cd3aa951f759e26
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:17:00 2021 +0900
+
+    first commit
+
+commit 3a5719e1ebfd8a61cb0fa2241562b62bfc9997bc
+Author: kody21c <headonggumdo@gmail.com>
+Date:   Mon Jul 5 16:16:30 2021 +0900
+
+    a.txt
+(base) kody21c@kody21cui-MacBook practice1 % git push git@github.com:Thughandling/test.git
+Enter passphrase for key '/Users/kody21c/.ssh/id_rsa': 
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (27/27), 2.23 KiB | 325.00 KiB/s, done.
+Total 27 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:Thughandling/test.git
+ * [new branch]      main -> main
+(base) kody21c@kody21cui-MacBook practice1 % cat README.md
+Hello, Git
+(base) kody21c@kody21cui-MacBook practice1 % vi re
+
+count yout blessings name them one by one
+
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+~                                                                                       
+-- INSERT --
